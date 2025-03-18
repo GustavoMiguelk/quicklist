@@ -2,9 +2,18 @@ main{
     display: block;
 
     max-width: 627px;
-
     margin: auto;
 
     justify-content: center;
     align-self: center;
+}
+
+@media (max-width: 700px){
+    main{
+        padding: 2rem;
+    }
+
+    header{
+        display: none;
+    }
 }

@@ -1,15 +1,16 @@
 form{
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: space-between;
 
     & input{
         all: unset;
 
-        border: 3px solid var(--border-primary);
+        border: 2px solid var(--border-primary);
         border-radius: .75rem;
 
         width: 75%;
+        height: 42px;
 
         background-color: var(--bg-secondary);
         padding-inline: 1rem;
@@ -17,7 +18,7 @@ form{
 
     & button{
         all: unset;
-        
+
         width: 30%;
         height: 44px;
 
@@ -26,5 +27,35 @@ form{
 
         text-align: center;
         color: white;
+
+        cursor: pointer;
     }
+}
+
+ul{
+    padding-block: 3rem;
+    display: grid;
+    gap: 1rem;
+
+    & li{
+        display: flex;
+        gap: 1rem;
+
+        padding: 1rem;
+        background-color: var(--bg-secondary);
+        border-radius: 0.75rem;
+    }
+}
+
+@media (max-width: 700px){
+
+    form{
+        flex-wrap: wrap;
+        
+        & input, button{
+            width: 100%;
+        }
+
+    }
+
 }

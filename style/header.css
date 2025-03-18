@@ -2,3 +2,15 @@ header{
     text-align: center;
     padding: 2rem;
 }
+
+span{
+    color: var(--color-brand);
+    font-weight: 600;
+
+    
+}
+
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
