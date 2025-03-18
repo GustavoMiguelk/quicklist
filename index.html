@@ -7,31 +7,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quicklist</title>
+    <link rel="stylesheet" href="./style/index.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
 </head>
 <body>
     
-    <header><img src="./assets/logo.png" alt="Logomarca"></header>
+    <main>
+        <header><img src="./assets/logo.png" alt="Logomarca"></header>
 
-    <article>
-        <span>Voltar</span>
-        <h1>Compras da Semana</h1>
+        <article>
+            <span>Voltar</span>
+            <h1>Compras da Semana</h1>
+            <form action="">
+                <input type="text" name="item" id="item" placeholder="Adicione um novo item">
+                <button>Adicionar item</button>
+            </form>
+            <ul>
+                <li><input type="checkbox">Pão de forma</li>
+                <li><input type="checkbox">Pão de forma</li>
+                <li><input type="checkbox">Pão de forma</li>
+                <li><input type="checkbox">Pão de forma</li>
+            </ul>
+        </article>
 
-        <form action="">
-            <input type="text" name="item" id="item" placeholder="Adicione um novo item">
-            <button>Adicionar item</button>
-        </form>
-
-        <ul>
-            <li><input type="checkbox">Pão de forma</li>
-            <li><input type="checkbox">Pão de forma</li>
-            <li><input type="checkbox">Pão de forma</li>
-            <li><input type="checkbox">Pão de forma</li>
-        </ul>
-
-    </article>
+    </main>
 
 </body>
 </html>

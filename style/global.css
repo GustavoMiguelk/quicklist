@@ -27,8 +27,24 @@
     /* Tipografia */
     --font-family: "Inter", sans-serif;
 
-    --title: bold 1.5rem 2rem var(--font-family);
+    --title: 700 1.5rem 2rem var(--font-family);
     --label: 600 1rem 1.25rem var(--font-family); 
     --paragraph: 500 1rem 1.25rem var(--font-family);
     --link: 500 0.85rem 1rem var(--font-family);
 }
+
+body{
+    height: 100vh;
+    background-color: var(--bg-primary);
+    font-family: "Inter", sans-serif;
+}
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    line-height: 2rem;
+
+    display: block;
+    padding-block: 2rem;
+}
+

@@ -1,0 +1,10 @@
+main{
+    display: block;
+
+    width: 627px;
+
+    margin: auto;
+
+    justify-content: center;
+    align-self: center;
+}

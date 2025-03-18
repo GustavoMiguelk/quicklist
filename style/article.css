@@ -1,0 +1,21 @@
+form{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    & input{
+        all: unset;
+        border: 2px solid var(--border-primary);
+        width: 75%;
+    }
+
+    & button{
+        all: unset;
+        width: 25%;
+
+        height: 44px;
+        background-color: var(--color-brand);
+        text-align: center;
+        color: white;
+    }
+}
