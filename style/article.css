@@ -45,6 +45,11 @@ ul{
         padding: 1rem;
         background-color: var(--bg-secondary);
         border-radius: 0.75rem;
+
+        & div{
+            display: flex;
+            gap: 1rem;
+        }
     }
 }
 
