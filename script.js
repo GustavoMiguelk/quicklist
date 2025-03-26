@@ -19,14 +19,32 @@ form.addEventListener("submit", (event) => {
     // Criando os novos Elementos
     const newListItem = document.createElement("li")
     const checkItem = document.createElement("input")
+    const itemWrap = document.createElement("div")
+    const deleteItem = document.createElement("img")
+
+    // Adicionando a Imagem ao botão.
+    deleteItem.src = "./assets/trash.svg"
+
+    // Adicionando a classe a imagem.
+    deleteItem.classList.add("delete")
 
     // Definindo o Tipo do Input
     checkItem.type = "checkbox"
 
+    itemWrap.append(checkItem, newItem.value.trim())
+
     // Juntando os Elementos
-    newListItem.append(checkItem, newItem.value.trim())
+    newListItem.append(itemWrap, deleteItem)
     items.prepend(newListItem);
 
     // Redefinindo o valor do Input
     newItem.value = ""
 });
+
+// Exclui o item selecionado
+items.addEventListener("click", (event) => {
+    if(event.target.classList.contains("delete")){
+        event.target.closest("li").remove()
+    }
+})
+
